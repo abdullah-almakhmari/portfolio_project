@@ -15,37 +15,55 @@
 
   <!-- Header / Navigation -->
   <header>
-    <h1>Abdullah Almakhmari</h1>
     <nav>
-      <a href="#home"><i class="fas fa-house"></i> Home</a>
-      <a href="#about"><i class="fas fa-user"></i> About</a>
-      <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
-      <a href="#skills"><i class="fas fa-cogs"></i> Skills</a>
-      <a href="#soft-skills"><i class="fas fa-user-friends"></i> Soft Skills</a>
-      <a href="#what-i-offer"><i class="fas fa-gift"></i> What I Offer</a>
-      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="#home"><i class="fas fa-house"></i> Home</a>
+        <a href="#about"><i class="fas fa-user"></i> About</a>
+        <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
+        <a href="#skills"><i class="fas fa-cogs"></i> Skills</a>
+        <a href="#tools"><i class="fas fa-toolbox"></i> Tools I Use</a>
+        <a href="#soft-skills"><i class="fas fa-user-friends"></i> Soft Skills</a>
+        <a href="#what-i-offer"><i class="fas fa-gift"></i> What I Offer</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+      </div>
     </nav>
   </header>
 
   <!-- Home Section -->
   <section id="home">
-    <h2>Hello, I'm Abdullah</h2>
-    <img src="images/my_photo.jpg" alt="Abdullah's Photo" width="150" height="150" />
-    <p class="intro-text">A passionate Data Scientist 📊</p>
+    <div class="home-container">
+      <div class="home-image">
+        <img src="images/my_photo.jpg" alt="Abdullah's Photo" />
+      </div>
+      <div class="home-text">
+        <h2>Hello, I'm <span class="highlight-name">Abdullah</span></h2>
+        <p class="animated-text">I turn data into decisions — with AI, code, and creativity.🚀</p>
+      </div>
+    </div>
   </section>
 
   <!-- About Section -->
   <section id="about">
     <h2 class="section-title">About Me</h2>
-    <p class="about-text">
-      I'm Abdullah, a self-taught data scientist with a strong passion for analyzing and interpreting complex
-      data.<br><br>
-      I'm currently learning <span class="highlight">Python</span>, <span class="highlight">C++</span>, and <span
-        class="highlight">Machine Learning</span> techniques.<br><br>
-      Additionally, I have skills in web development, including <span class="highlight">HTML</span>, <span
-        class="highlight">CSS</span>, and <span class="highlight">JavaScript</span>.
+
+    <blockquote class="pulled-quote">
+      "Data tells a story — and I am here to help you read it."
+    </blockquote>
+
+    <p class="about-description">
+      Hi, I’m Abdullah, a dedicated Data Scientist passionate about uncovering insights from complex datasets.
+      With a solid foundation in <span class="highlight">Python</span>, <span class="highlight">Machine Learning</span>,
+      and <span class="highlight">Data Visualization</span>, I transform data into impactful business decisions.
     </p>
+
+    <ul class="about-list">
+      <li>Proficient in programming with <strong>Python</strong> and <strong>C++</strong>.</li>
+      <li>Experienced in building and deploying <strong>Machine Learning</strong> models.</li>
+      <li>Skilled at creating <strong>interactive dashboards</strong> to visualize complex data.</li>
+    </ul>
   </section>
 
 
@@ -93,6 +111,47 @@
     </div>
   </section>
 
+  <!-- Tools I Use Section -->
+
+  <section id="tools">
+    <h2 class="section-title">Tools I Use</h2>
+    <div class="tools-grid">
+      <div class="tool-card color1">
+        <i class="fas fa-code"></i>
+        <h4>VS Code</h4>
+      </div>
+      <div class="tool-card color2">
+        <i class="fas fa-book"></i>
+        <h4>Jupyter Notebook</h4>
+      </div>
+      <div class="tool-card color3">
+        <i class="fab fa-github"></i>
+        <h4>GitHub</h4>
+      </div>
+      <div class="tool-card color4">
+        <i class="fas fa-cloud"></i>
+        <h4>Google Colab</h4>
+      </div>
+      <div class="tool-card color5">
+        <i class="fas fa-database"></i>
+        <h4>MySQL</h4>
+      </div>
+      <div class="tool-card color6">
+        <i class="fas fa-chart-bar"></i>
+        <h4>Matplotlib</h4>
+      </div>
+      <div class="tool-card color7">
+        <i class="fas fa-table"></i>
+        <h4>Pandas</h4>
+      </div>
+      <div class="tool-card color8">
+        <i class="fas fa-brain"></i>
+        <h4>Scikit-learn</h4>
+      </div>
+    </div>
+  </section>
+
+
   <!-- Soft Skills Section -->
   <section id="soft-skills">
     <h2 class="section-title">Soft Skills</h2>
@@ -106,21 +165,6 @@
       <div class="soft-skill-card">📚 Continuous Learning</div>
       <div class="soft-skill-card">🧭 Leadership</div>
       <div class="soft-skill-card">💡 Creativity</div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section id="testimonials">
-    <h2 class="section-title">Instructor's Note</h2>
-    <div class="testimonial-card">
-      <img src="images/naresh.jpg" alt="Dr. Naresh" class="testimonial-img">
-      <div class="testimonial-content">
-        <p class="testimonial-text">
-          "Abdullah is a dedicated learner with a great passion for data science and web development. He consistently
-          shows progress in every project."
-        </p>
-        <p class="testimonial-author">- Dr. Naresh, Professor at University of Nizwa</p>
-      </div>
     </div>
   </section>
 
@@ -146,21 +190,68 @@
     </div>
   </section>
 
-
   <!-- Contact Section -->
+
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out to me via email or WhatsApp.</p>
+    <h2 class="section-title">Contact Me</h2>
+    <p>Feel free to reach out to me via email, WhatsApp, or this form.</p>
+
     <div class="contact-buttons">
-      <a href="mailto:3264165@uofn.edu.om" class="btn email-btn">📧 Email Me</a>
+      <a href="https://www.instagram.com/abdullah_rashid/" target="_blank" class="btn instagram-btn">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
       <a href="https://wa.me/96895035573" target="_blank" class="btn whatsapp-btn">💬 WhatsApp</a>
+      <a href="https://www.linkedin.com/in/abdullah-rashid-almakhmari-289421193/" target="_blank"
+        class="btn linkedin-btn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+
     </div>
+
+    <form action="https://formspree.io/f/mgvzeeaw" method="POST" class="contact-form">
+      <div class="input-wrapper">
+        <i class="fas fa-user"></i>
+        <input type="text" name="name" placeholder="Your Name" required />
+      </div>
+
+      <div class="input-wrapper">
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
+
+      <div class="input-wrapper">
+        <i class="fas fa-comment"></i>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit" class="btn email-btn">Send Message</button>
+    </form>
   </section>
+
+
+
 
   <!-- Footer -->
   <footer>
     <p>© 2025 Abdullah Almakhmari. All rights reserved.</p>
   </footer>
+
+
+  <!-- java script -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('#nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
 
 </body>
 
